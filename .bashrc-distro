@@ -1,0 +1,4 @@
+alias yum='sudo yum'
+alias dnf='sudo dnf'
+alias drive='drive-google'
+
