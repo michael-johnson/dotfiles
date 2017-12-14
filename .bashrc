@@ -1,14 +1,16 @@
 # Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+if [ -f '/etc/bashrc' ]; then
+	'. /etc/bashrc'
+fi
+
+# Source confidential definitions
+if [ -f '.bashrc-confidential' ]; then
+        . '.bashrc-confidential'
 fi
 
 # User specific aliases and functions
 alias ls='ls -l -h --color=auto'
 alias df='df -h'
-alias yum='sudo yum'
-alias dnf='sudo dnf'
-alias drive='drive-google'
 
 # Setup alias git alias for dot file repository
 # Per: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
