@@ -3,6 +3,11 @@ if [ -f '/etc/bashrc' ]; then
 	'. /etc/bashrc'
 fi
 
+# Source distro definitions (per machine configs)
+if [ -f '.bashrc-distro' ]; then
+        . '.bashrc-distro'
+fi
+
 # Source confidential definitions
 if [ -f '.bashrc-confidential' ]; then
         . '.bashrc-confidential'
