@@ -188,3 +188,5 @@ bindsym $mod+Delete mode "$mode_system"
 
 # Auto Start
 exec --no-startup-id sh ~/.fehbg
+exec --no-startup-id nm-applet
+
