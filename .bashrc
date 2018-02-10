@@ -16,6 +16,7 @@ fi
 # User specific aliases and functions
 alias ls='ls -l -h --color=auto'
 alias df='df -h'
+alias lpassc='lpass show -c --password'
 
 # Setup alias git alias for dot file repository
 # Per: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
