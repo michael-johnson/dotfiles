@@ -8,6 +8,7 @@ set incsearch
 set number
 syntax on
 set spelllang=en
+set expandtab ts=4 sw=4 ai
 
 " Use \p for paste in insert mode.
 imap <leader>p <Esc>pa
