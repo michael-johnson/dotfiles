@@ -1,0 +1,61 @@
+{
+    // No telemetry
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+
+    // Color scheme
+    "workbench.colorTheme": "Solarized Dark",
+
+    // Font settings
+    "editor.fontFamily": "'Input Mono Medium', monospace",
+    "editor.fontSize": 11,
+    "editor.fontWeight": "400",
+    "window.zoomLevel": 0,
+    
+    // Use git bash for integrated terminal
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+    // ================= VIM Settings ================= //
+    "editor.lineNumbers": "relative",
+    "vim.handleKeys": {
+        "<C-w>": false
+    },
+
+    "vim.ignorecase": true,
+    "vim.smartcase": true,
+    "vim.incsearch": true,
+    "vim.autoindent": true,
+
+    "vim.textwidth": 120,
+    
+    "vim.insertModeKeyBindings": [
+        // Use hj or jh to leave insert mode
+        {
+            "before": ["j", "h"],
+            "after": ["<ESC>"]
+        },
+        {
+            "before": ["h", "j"],
+            "after": ["<ESC>"]
+        },
+        // Use \p for paste in insert mode
+        {
+            "before": ["<leader>", "p"],
+            "after": ["<ESC>", "p", "a"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        // Use Control-A to select all
+        {
+            "before": ["<C-a>"],
+            "after": ["<ESC>", "g", "g", "V", "G", "<CR>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        // Use Control-A to select all
+        {
+            "before": ["<C-a>"],
+            "after": ["<ESC>", "g", "g", "V", "G", "<CR>"]
+        }
+    ],
+}
