@@ -58,4 +58,5 @@
             "after": ["<ESC>", "g", "g", "V", "G", "<CR>"]
         }
     ],
+    "editor.minimap.enabled": false,
 }
