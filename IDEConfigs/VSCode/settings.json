@@ -11,9 +11,21 @@
     "editor.fontSize": 11,
     "editor.fontWeight": "400",
     "window.zoomLevel": 0,
+
+    // Disable minimap
+    "editor.minimap.enabled": false,
     
     // Use git bash for integrated terminal
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+    // TODO Highlight
+    "todohighlight.isCaseSensitive": false,
+    "todohighlight.keywordsPattern": "TODO:|FIXME:",
+    "todohighlight.defaultStyle": {
+        "color": "white",
+        "backgroundColor": "#b58900",
+        // "isWholeLine": true,
+    },
 
     // ================= VIM Settings ================= //
     "editor.lineNumbers": "relative",
@@ -58,5 +70,4 @@
             "after": ["<ESC>", "g", "g", "V", "G", "<CR>"]
         }
     ],
-    "editor.minimap.enabled": false,
 }
