@@ -22,5 +22,13 @@ alias lpassc='lpass show -c --password'
 # Per: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 alias cnf='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
 
+# Add git branch if its present to PS1
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
 # Make command prompt look cool
-export PS1='\[\e]0;\w\a\]\n\[\e[34m\] \u@\h:\[\e[0m\]\w\[\e[0m\]\n \$ ' # Use Solarized Dark terminal theme with 0% transparency
+export PS1='\[\e]0;\w\a\]\n\[\e[34m\] \u@\h:\[\e[0m\]\w\[\e[0m\] $(parse_git_branch)\n \$ '
+
+# Only show the last few directories in the command prompt
+PROMPT_DIRTRIM=5
