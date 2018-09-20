@@ -28,7 +28,7 @@ parse_git_branch() {
 }
 
 # Make command prompt look cool
-export PS1='\[\e]0;\w\a\]\n\[\e[34m\] \u@\h:\[\e[0m\]\w\[\e[0m\] $(parse_git_branch)\n \$ '
+export PS1='\[\e]0;\w\a\]\n\[\e[34m\] \u@\h:\[\e[0m\]\w\[\e[0m\] $(parse_git_branch)\012 \$ '
 
 # Only show the last few directories in the command prompt
 PROMPT_DIRTRIM=5
