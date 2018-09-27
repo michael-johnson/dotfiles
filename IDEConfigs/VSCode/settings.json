@@ -70,4 +70,6 @@
             "after": ["<ESC>", "g", "g", "V", "G", "<CR>"]
         }
     ],
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
 }
