@@ -20,13 +20,11 @@
 
     // Javascript (*.js) language settings
     "[javascript]": {
-        // "editor.formatOnSave": true
         "editor.tabSize": 2,
         "editor.detectIndentation": false
     },
     // Javascript React (*.jsx) language settings
     "[javascriptreact]": {
-        // "editor.formatOnSave": true
         "editor.tabSize": 2,
         "editor.detectIndentation": false
     },
@@ -96,5 +94,5 @@
     "breadcrumbs.enabled": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "prettier.eslintIntegration": true,
-    "diffEditor.renderSideBySide": false,
+    "diffEditor.renderSideBySide": false
 }
