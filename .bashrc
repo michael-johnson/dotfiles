@@ -20,7 +20,7 @@ alias lpassc='lpass show -c --password'
 
 # Setup alias git alias for dot file repository
 # Per: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
-alias cnf='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
+alias cnf='git --git-dir=$HOME/.cfg --work-tree=$HOME'
 
 # Add git branch if its present to PS1
 parse_git_branch() {
