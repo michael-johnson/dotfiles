@@ -1,0 +1,5 @@
+[user]
+	name = Michael Johnson
+	email = michael.johnson@paycomonline.com
+[pull]
+	ff = true
