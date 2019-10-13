@@ -1,8 +1,12 @@
 [user]
 	name = Michael A. Johnson
 	email = johnson.michael.andrew@gmail.com
+[core]
+	editor = vim
 [pull]
 	ff = true
+[push]
+	default = simple
 [alias]
 	ignore = update-index --assume-unchanged
 	unignore = update-index --no-assume-unchanged
