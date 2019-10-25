@@ -16,10 +16,12 @@
 	unignore = update-index --no-assume-unchanged
 	ignored = !git ls-files -v | grep "^[[:lower:]]"
     b = branch
-    r = reset
 	c = commit
+    d = diff
 	co = checkout
-	s = status
+    l = log -n 5
     p = publish
+    r = reset
+	s = status
 [include]
 	path = .gitconfig-confidential
