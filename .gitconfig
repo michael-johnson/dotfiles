@@ -8,8 +8,18 @@
 [push]
 	default = simple
 [alias]
-	ignore = update-index --assume-unchanged
+    branch-name = "!git rev-parse --abbrev-ref HEAD"
+    publish=![[ $(git config branch.$(git symbolic-ref --short HEAD).merge) = '' ]] && git push -u origin $(git symbolic-ref --short HEAD) || git push
+    unpublish = "!git push origin :$(git branch-name)"
+    delete-merged = "!git co $1 && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+    ignore = update-index --assume-unchanged
 	unignore = update-index --no-assume-unchanged
 	ignored = !git ls-files -v | grep "^[[:lower:]]"
+    b = branch
+    r = reset
+	c = commit
+	co = checkout
+	s = status
+    p = publish
 [include]
 	path = .gitconfig-confidential
