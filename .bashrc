@@ -30,6 +30,7 @@ alias df='df -h'
 alias lpassc='lpass show -c --password'
 alias d='docker'
 alias dc='docker-compose'
+alias g='git'
 
 # Setup alias git alias for dot file repository
 # Per: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
