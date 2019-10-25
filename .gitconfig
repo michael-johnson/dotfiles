@@ -15,12 +15,14 @@
     ignore = update-index --assume-unchanged
 	unignore = update-index --no-assume-unchanged
 	ignored = !git ls-files -v | grep "^[[:lower:]]"
+    a = add
     b = branch
 	c = commit
     d = diff
 	co = checkout
     l = log -n 5
-    p = publish
+    pu = publish
+    pl = pull
     r = reset
 	s = status
 [include]
