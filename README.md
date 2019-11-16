@@ -6,7 +6,7 @@ This is how I manage my dotfiles on nix(ish) systems using the ideas outlined in
 Run the following command to configure a new system to use this dotfiles repository:
 
 ```bash
-curl -Lks https://gitlab.com/snippets/1862696/raw?inline=false | /bin/bash
+curl -Lks https://gitlab.com/michael-johnson/dotfiles/snippets/1913818/raw?inline=false | /bin/bash
 ```
 
 ## Usage
