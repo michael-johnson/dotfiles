@@ -23,7 +23,6 @@ if ! shopt -oq posix; then
     fi
 fi
 
-
 # User specific aliases and functions
 alias ls='ls -l -h --color=auto'
 alias df='df -h'
@@ -35,6 +34,17 @@ alias g='git'
 # Setup alias git alias for dot file repository
 # Per: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 alias cnf='git --git-dir=$HOME/.cfg --work-tree=$HOME'
+
+# Enable git specific auto completion for aliases
+if [ -f "/usr/share/bash-completion/completions/git" ]; then
+    . /usr/share/bash-completion/completions/git
+    for a in $(alias | sed -n 's/^alias \(g[^=]*\)=.git .*/\1/p'); do
+        c=$(alias $a | sed 's/^[^=]*=.git \([a-z0-9\-]\+\).*/\1/' | tr '-' '_')
+        if set | grep -q "^_git_$c *()"; then
+            eval "__git_complete $a _git_$c"
+        fi
+    done
+fi
 
 # Add git branch if its present to PS1
 parse_git_branch() {
